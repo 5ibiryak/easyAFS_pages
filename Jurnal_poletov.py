@@ -1,0 +1,153 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1200, 800)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMinimumSize(QtCore.QSize(1200, 800))
+        MainWindow.setMaximumSize(QtCore.QSize(1200, 800))
+        MainWindow.setSizeIncrement(QtCore.QSize(1200, 800))
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(0, 0, 1203, 90))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
+        self.frame.setSizePolicy(sizePolicy)
+        self.frame.setMinimumSize(QtCore.QSize(1203, 90))
+        self.frame.setMaximumSize(QtCore.QSize(1203, 90))
+        self.frame.setStyleSheet("QFrame{\n"
+"    \n"
+"    background-color: rgb(228, 232, 235);\n"
+"}")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        
+        font = QtGui.QFont()
+        font.setFamily("Rockwell")
+        font.setPointSize(9)
+        
+        self.label1 = QtWidgets.QLabel(self.frame)
+        self.label1.setGeometry(QtCore.QRect(0, 0, 127, 87))
+        self.label1.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label1.setStyleSheet("padding :5px")
+        self.label1.setText("АФС")
+        self.label1.setScaledContents(True)
+        self.label1.setObjectName("label1")
+        self.label1.setFont(font)
+        self.label1.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label2 = QtWidgets.QLabel(self.frame)
+        self.label2.setGeometry(QtCore.QRect(127, 0, 160, 87))
+        self.label2.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label2.setStyleSheet("padding :5px")
+        self.label2.setText("Дата полёта")
+        self.label2.setScaledContents(True)
+        self.label2.setObjectName("label2")
+        self.label2.setFont(font)
+        self.label2.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label3 = QtWidgets.QLabel(self.frame)
+        self.label3.setGeometry(QtCore.QRect(287, 0, 122, 87))
+        self.label3.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label3.setStyleSheet("padding :5px")
+        self.label3.setText("БВС")
+        self.label3.setScaledContents(True)
+        self.label3.setObjectName("label3")
+        self.label3.setFont(font)
+        self.label3.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label4 = QtWidgets.QLabel(self.frame)
+        self.label4.setGeometry(QtCore.QRect(409, 0, 100, 87))
+        self.label4.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label4.setStyleSheet("padding :5px")
+        self.label4.setText("№ борта")
+        self.label4.setScaledContents(True)
+        self.label4.setObjectName("label4")
+        self.label4.setFont(font)
+        self.label4.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label5 = QtWidgets.QLabel(self.frame)
+        self.label5.setGeometry(QtCore.QRect(509, 0, 110, 87))
+        self.label5.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label5.setStyleSheet("padding :5px")
+        self.label5.setText("№ полётного задания")
+        self.label5.setWordWrap(True)
+        self.label5.setScaledContents(True)
+        self.label5.setObjectName("label5")
+        self.label5.setFont(font)
+        self.label5.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label6 = QtWidgets.QLabel(self.frame)
+        self.label6.setGeometry(QtCore.QRect(619, 0, 209, 87))
+        self.label6.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label6.setStyleSheet("padding :5px")
+        self.label6.setText("Наименование объекта")
+        self.label6.setWordWrap(True)
+        self.label6.setScaledContents(True)
+        self.label6.setObjectName("label6")
+        self.label6.setFont(font)
+        self.label6.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label7 = QtWidgets.QLabel(self.frame)
+        self.label7.setGeometry(QtCore.QRect(828, 0, 150, 87))
+        self.label7.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label7.setStyleSheet("padding :5px")
+        self.label7.setText("Тип съемки")
+        self.label7.setWordWrap(True)
+        self.label7.setScaledContents(True)
+        self.label7.setObjectName("label7")
+        self.label7.setFont(font)
+        self.label7.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label8 = QtWidgets.QLabel(self.frame)
+        self.label8.setGeometry(QtCore.QRect(978, 0, 100, 87))
+        self.label8.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label8.setStyleSheet("padding :5px")
+        self.label8.setText("Вид съемки")
+        self.label8.setWordWrap(True)
+        self.label8.setScaledContents(True)
+        self.label8.setObjectName("label8")
+        self.label8.setFont(font)
+        self.label8.setAlignment(QtCore.Qt.AlignCenter)
+        
+        self.label9 = QtWidgets.QLabel(self.frame)
+        self.label9.setGeometry(QtCore.QRect(1078, 0, 122, 87))
+        self.label9.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label9.setStyleSheet("padding :5px")
+        self.label9.setText("Подробнее")
+        self.label9.setWordWrap(True)
+        self.label9.setScaledContents(True)
+        self.label9.setObjectName("label9")
+        self.label9.setFont(font)
+        self.label9.setAlignment(QtCore.Qt.AlignCenter)
+        
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Flight Docs"))
+
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
