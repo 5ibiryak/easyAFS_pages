@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'qwe.ui'
+# Form implementation generated from reading ui file 'ishodnie_dannye.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+class ishodnie_dannye(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1200, 800)
@@ -149,21 +149,78 @@ class Ui_MainWindow(object):
 "    border: 1px solid black;\n"
 "}")
         self.plainTextEdit_folder_5.setObjectName("plainTextEdit_folder_5")
+        self.textBrowser_6 = QtWidgets.QTextBrowser(self.frame_2)
+        self.textBrowser_6.setGeometry(QtCore.QRect(250, 60, 181, 51))
+        self.textBrowser_6.setStyleSheet("QTextBrowser{\n"
+"    \n"
+"    border: 0px\n"
+"}")
+        self.textBrowser_6.setObjectName("textBrowser_6")
         self.pushButton = QtWidgets.QPushButton(self.frame_2)
-        self.pushButton.setGeometry(QtCore.QRect(250, 570, 211, 51))
+        self.pushButton.setGeometry(QtCore.QRect(250, 620, 211, 51))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setWeight(50)
+        font.setStrikeOut(False)
         self.pushButton.setFont(font)
         self.pushButton.setMouseTracking(True)
+        self.pushButton.setTabletTracking(False)
+        self.pushButton.setFocusPolicy(QtCore.Qt.WheelFocus)
         self.pushButton.setAutoFillBackground(False)
-        self.pushButton.setStyleSheet("QPushButton{\n"
-"    \n"
-"    background-color: rgb(0, 151, 216);\n"
-"    border-radius: 5px;\n"
-"}")
+        self.pushButton.setStyleSheet("QPushButton{background-color: rgb(0, 151, 216);\n"
+"    border-color: rgb(0, 0, 0);\n"
+"border: 1px solid;\n"
+"border-radius: 5px;}\n"
+"\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"background-color: rgb(0, 111, 186);\n"
+"border-style:solid;\n"
+"border-width:2px;\n"
+"}@")
         self.pushButton.setAutoRepeat(False)
         self.pushButton.setObjectName("pushButton")
+        self.pushButton_folder = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_folder.setGeometry(QtCore.QRect(650, 150, 31, 31))
+        self.pushButton_folder.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(0, 151, 216);\n"
+"    border-radius: 10px;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"border: 1px solid;\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"background-color: rgb(0, 111, 186);\n"
+"border-style:solid;\n"
+"border-width:2px;\n"
+"}@")
+        self.pushButton_folder.setObjectName("pushButton_folder")
+        self.pushButton_folder_2 = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_folder_2.setGeometry(QtCore.QRect(650, 360, 31, 31))
+        self.pushButton_folder_2.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(0, 151, 216);\n"
+"    border-radius: 10px;\n"
+"    border-color: rgb(0, 0, 0);\n"
+"border: 1px solid;\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"background-color: rgb(0, 111, 186);\n"
+"border-style:solid;\n"
+"border-width:2px;\n"
+"}@")
+        self.pushButton_folder_2.setObjectName("pushButton_folder_2")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -197,14 +254,13 @@ class Ui_MainWindow(object):
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Имя документа excel</span></p></body></html>"))
-        self.pushButton.setText(_translate("MainWindow", "Сохранить"))
+        self.textBrowser_6.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Исходные данные</span></p></body></html>"))
+        self.pushButton.setText(_translate("MainWindow", "Загрузить"))
+        self.pushButton_folder.setText(_translate("MainWindow", "..."))
+        self.pushButton_folder_2.setText(_translate("MainWindow", "..."))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
